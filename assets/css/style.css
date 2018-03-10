@@ -188,6 +188,7 @@ h4 {
     line-height: 2.2rem;
     margin-bottom: 0.575rem;
     font-family: 'Kaushan Script', cursive;
+   color:#ffcc00;
 }
 h5 {
     font-size: 1.125rem;
@@ -198,6 +199,8 @@ h5 {
 h6 {
     font-size: 1rem;
     margin-bottom: .9rem;
+   font-family: 'Kaushan Script', cursive;
+   color:#ffcc00;
 }
 p {
     line-height: 1.375rem;
