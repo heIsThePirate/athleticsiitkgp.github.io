@@ -11,6 +11,87 @@ Released for free under the Creative Commons Attribution 3.0 license (templated.
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		
+		<!-- Google fonts link-->
+        <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&amp;subset=latin-ext" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+
+        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+
+        <!--For Plugins external css-->
+        <link rel="stylesheet" href="assets/css/plugins.css" />
+
+        <!--Theme custom css -->
+        <link rel="stylesheet" href="assets/css/style.css">
+		
+		
+			<style>
+		.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 32%;
+    margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+	
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
+	</style>
+	<!--Theme Responsive css-->
+        <link rel="stylesheet" href="assets/css/responsive.css" />
+<script defer src="/static/fontawesome/fontawesome-all.js"></script>
+<script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+		
 	</head>
 	<body>
 
@@ -40,7 +121,9 @@ Released for free under the Creative Commons Attribution 3.0 license (templated.
 
 
 					<h3>Nitin Dammu</h3>
-					<p> MS</p>
+					<div class="popup" onclick="myFunction1()"> <b><i><u> Events ^</u> </b></i>
+  <span class="popuptext" id="myPopup1"> Discus Throw</span>
+</div>
 
 
 				</div>
@@ -51,7 +134,9 @@ Released for free under the Creative Commons Attribution 3.0 license (templated.
 
 
 					<h3>Gaurav Shenoy</h3>
-							<p>MS</p>
+							<div class="popup" onclick="myFunction2()"> <b><i><u> Events ^</u> </b></i>
+  <span class="popuptext" id="myPopup2"> 400m 800m 1500m<br>400m Hurdles<br>4x400m relay</span>
+</div>
 
 
 
@@ -63,7 +148,9 @@ Released for free under the Creative Commons Attribution 3.0 license (templated.
 
 
 							<h3>Anuj Singh</h3>
-							<p>PH</p>
+							<div class="popup" onclick="myFunction3()"> <b><i><u> Events ^</u> </b></i>
+  <span class="popuptext" id="myPopup3"> 4x400m relay</span>
+</div>
 
 
 
@@ -76,7 +163,9 @@ Released for free under the Creative Commons Attribution 3.0 license (templated.
 
 
 							<h3>Samar Vikram Singh Chandel</h3>
-							<p>RP</p>
+							<div class="popup" onclick="myFunction4()"> <b><i><u> Events ^</u> </b></i>
+  <span class="popuptext" id="myPopup4"> 400m<br> 400m Hurdles<br> 100m and 400m relay</span>
+</div>
 
 
 						</div>
@@ -100,7 +189,9 @@ Released for free under the Creative Commons Attribution 3.0 license (templated.
 
 
 							<h3>Mahendra Mohan Rabha</h3>
-							<p> MS</p>
+							<div class="popup" onclick="myFunction5()"> <b><i><u> Events ^</u> </b></i>
+  <span class="popuptext" id="myPopup5"> Javelin Throw<br>Shotput</span>
+</div>
 
 
 						</div>
@@ -111,7 +202,9 @@ Released for free under the Creative Commons Attribution 3.0 license (templated.
 
 
 							<h3>Arvind Vikas</h3>
-							<p>HJB</p>
+							<div class="popup" onclick="myFunction6()"> <b><i><u> Events ^</u> </b></i>
+  <span class="popuptext" id="myPopup6"> 100m 200m <br>L. jump T. jump<br>100m & 400m relay</span>
+</div>
 
 
 						</div>
@@ -123,7 +216,9 @@ Released for free under the Creative Commons Attribution 3.0 license (templated.
 
 
 							<h3>Ashok Kumar</h3>
-							<p>HJB</p>
+							<div class="popup" onclick="myFunction7()"> <b><i><u> Events ^</u> </b></i>
+  <span class="popuptext" id="myPopup7"> High Jump</span>
+</div>
 
 
 						</div>
@@ -134,7 +229,9 @@ Released for free under the Creative Commons Attribution 3.0 license (templated.
 
 
 							<h3>Charchil Banra</h3>
-							<p>HJB</p>
+							<div class="popup" onclick="myFunction8()"> <b><i><u> Events ^</u> </b></i>
+  <span class="popuptext" id="myPopup8">100m<br>110m Hurdles</span>
+</div>
 
 
 						</div>
@@ -157,7 +254,9 @@ Released for free under the Creative Commons Attribution 3.0 license (templated.
 
 
 							<h3>P. Vaibhav</h3>
-							<p>NH</p>
+							<div class="popup" onclick="myFunction9()"> <b><i><u> Events ^</u> </b></i>
+  <span class="popuptext" id="myPopup9"> 100m<br>110m Hurdles</span>
+</div>
 
 
 
@@ -171,7 +270,9 @@ Released for free under the Creative Commons Attribution 3.0 license (templated.
 
 							<h3>Parveen Lather</h3>
  
-							<p>HJB</p>
+							<div class="popup" onclick="myFunction10()"> <b><i><u> Events ^</u> </b></i>
+  <span class="popuptext" id="myPopup10"> 100m<br>110m Hurdles</span>
+</div>
 
 
 
@@ -185,7 +286,9 @@ Released for free under the Creative Commons Attribution 3.0 license (templated.
 
 
 							<h3>Preetij Amin</h3>
-							<p>PH</p>
+							<div class="popup" onclick="myFunction11()"> <b><i><u> Events ^</u> </b></i>
+  <span class="popuptext" id="myPopup11"> 110m Hurdles</span>
+</div>
 
 
 
@@ -199,8 +302,9 @@ Released for free under the Creative Commons Attribution 3.0 license (templated.
 
 
 							<h3>Rahul Koshal</h3>
-							<p>RK</p>
-
+							<div class="popup" onclick="myFunction12()"> <b><i><u> Events ^</u> </b></i>
+  <span class="popuptext" id="myPopup12"> Hammer Throw</span>
+</div>
 
 
 						</div>
@@ -223,7 +327,9 @@ Released for free under the Creative Commons Attribution 3.0 license (templated.
 
 
 							<h3>Raj Kumar</h3>
-							<p> NH</p>
+							<div class="popup" onclick="myFunction13()"> <b><i><u> Events ^</u> </b></i>
+  <span class="popuptext" id="myPopup13"> 800m,1500m</span>
+</div>
 
 
 
@@ -237,7 +343,9 @@ Released for free under the Creative Commons Attribution 3.0 license (templated.
 
 							<h3>Ronit Ranjan</h3>
  
-							<p>AZ</p>
+							<div class="popup" onclick="myFunction14()"> <b><i><u> Events ^</u> </b></i>
+  <span class="popuptext" id="myPopup14"> 800m,1500m</span>
+</div>
 
 
 
@@ -251,7 +359,9 @@ Released for free under the Creative Commons Attribution 3.0 license (templated.
 
 
 							<h3>Sange Tenzin</h3>
-							<p>NH</p>
+							<div class="popup" onclick="myFunction15()"> <b><i><u> Events ^</u> </b></i>
+  <span class="popuptext" id="myPopup15"> Hammer Throw</span>
+</div>
 
 
 
@@ -265,7 +375,9 @@ Released for free under the Creative Commons Attribution 3.0 license (templated.
 
 
 							<h3>Satya Prakash</h3>
-							<p>RK</p>
+							<div class="popup" onclick="myFunction16()"> <b><i><u> Events ^</u> </b></i>
+  <span class="popuptext" id="myPopup16"> 4x100m Relay</span>
+</div>
 
 
 
@@ -293,7 +405,9 @@ Released for free under the Creative Commons Attribution 3.0 license (templated.
 
 
 							<h3>Srinivas Jarupula</h3>
-							<p>RP</p>
+							<div class="popup" onclick="myFunction17()"> <b><i><u> Events ^</u> </b></i>
+  <span class="popuptext" id="myPopup17"> Long jump<br>Triple Jump</span>
+</div>
 
 
 
@@ -307,7 +421,9 @@ Released for free under the Creative Commons Attribution 3.0 license (templated.
 
 							<h3>Sumit Singh</h3>
  
-							<p>RP</p>
+							<div class="popup" onclick="myFunction18()"> <b><i><u> Events ^</u> </b></i>
+  <span class="popuptext" id="myPopup18"> 100m 200m<br> 4x100m<br>4x400m relay</span>
+</div>
 
 
 
@@ -321,7 +437,9 @@ Released for free under the Creative Commons Attribution 3.0 license (templated.
 
 
 							<h3>Tushar Amrutkar</h3>
-							<p>NH</p>
+							<div class="popup" onclick="myFunction19()"> <b><i><u> Events ^</u> </b></i>
+  <span class="popuptext" id="myPopup19"> 800m,1500m</span>
+</div>
 
 
 
@@ -335,7 +453,9 @@ Released for free under the Creative Commons Attribution 3.0 license (templated.
 
 
 							<h3>Vivek Kumar Jaiswal</h3>
-							<p>RP</p>
+							<div class="popup" onclick="myFunction20()"> <b><i><u> Events ^</u> </b></i>
+  <span class="popuptext" id="myPopup20">Javelin Throw</span>
+</div>
 
 
 
@@ -371,7 +491,9 @@ Released for free under the Creative Commons Attribution 3.0 license (templated.
 
 
 							<h3>Anusha ganivada</h3>
-							<p>SN</p>
+							<div class="popup" onclick="myFunction21()"> <b><i><u> Events ^</u> </b></i>
+  <span class="popuptext" id="myPopup21">high jump</span>
+</div>
 
 
 
@@ -385,7 +507,9 @@ Released for free under the Creative Commons Attribution 3.0 license (templated.
 
 							<h3>Sarasija gaddameedi</h3>
  
-							<p>SN</p>
+							<div class="popup" onclick="myFunction22()"> <b><i><u> Events ^</u> </b></i>
+  <span class="popuptext" id="myPopup22">long jump<br>Triple Jump</span>
+</div>
 
 
 
@@ -399,7 +523,9 @@ Released for free under the Creative Commons Attribution 3.0 license (templated.
 
 
 							<h3>Madhurima banpur</h3>
-							<p>SN</p>
+							<div class="popup" onclick="myFunction23()"> <b><i><u> Events ^</u> </b></i>
+  <span class="popuptext" id="myPopup23"> 4x100m</span>
+</div>
 
 
 
@@ -413,7 +539,9 @@ Released for free under the Creative Commons Attribution 3.0 license (templated.
 
 
 							<h3>Komal Kumawa</h3>
-							<p>SN</p>
+							<div class="popup" onclick="myFunction24()"> <b><i><u> Events ^</u> </b></i>
+  <span class="popuptext" id="myPopup24"> 4x100m</span>
+</div>
 
 
 
@@ -435,6 +563,136 @@ Released for free under the Creative Commons Attribution 3.0 license (templated.
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+<script>
+// When the user clicks on div, open the popup
+			function myFunction1() {
+			    var popup = document.getElementById("myPopup1");
+			    popup.classList.toggle("show");
+				}
+				function myFunction2() {
+			    var popup = document.getElementById("myPopup2");
+			    popup.classList.toggle("show");
+			}
+			function myFunction3() {
+			    var popup = document.getElementById("myPopup3");
+			    popup.classList.toggle("show");
+			}
+			function myFunction4() {
+			    var popup = document.getElementById("myPopup4");
+			    popup.classList.toggle("show");
+			}
+				
+				function myFunction5() {
+			    var popup = document.getElementById("myPopup5");
+			    popup.classList.toggle("show");
+				}
+				
+				function myFunction6() {
+			    var popup = document.getElementById("myPopup6");
+			    popup.classList.toggle("show");
+				}
+				
+				function myFunction7() {
+			    var popup = document.getElementById("myPopup7");
+			    popup.classList.toggle("show");
+				}
+				
+				function myFunction8() {
+			    var popup = document.getElementById("myPopup8");
+			    popup.classList.toggle("show");
+				}
+				
+				
+				
+				function myFunction9() {
+			    var popup = document.getElementById("myPopup9");
+			    popup.classList.toggle("show");
+				}
+				
+				function myFunction10() {
+			    var popup = document.getElementById("myPopup10");
+			    popup.classList.toggle("show");
+				}
+				
+				function myFunction11() {
+			    var popup = document.getElementById("myPopup11");
+			    popup.classList.toggle("show");
+				}
+				
+				function myFunction12() {
+			    var popup = document.getElementById("myPopup12");
+			    popup.classList.toggle("show");
+				}
+				
+				
+				
+				function myFunction13() {
+			    var popup = document.getElementById("myPopup13");
+			    popup.classList.toggle("show");
+				}
+				
+				function myFunction14() {
+			    var popup = document.getElementById("myPopup14");
+			    popup.classList.toggle("show");
+				}
+				
+				function myFunction15() {
+			    var popup = document.getElementById("myPopup15");
+			    popup.classList.toggle("show");
+				}
+				
+				function myFunction16() {
+			    var popup = document.getElementById("myPopup16");
+			    popup.classList.toggle("show");
+				}
+				
+				
+				
+				function myFunction17() {
+			    var popup = document.getElementById("myPopup17");
+			    popup.classList.toggle("show");
+				}
+				
+				function myFunction18() {
+			    var popup = document.getElementById("myPopup18");
+			    popup.classList.toggle("show");
+				}
+				
+				function myFunction19() {
+			    var popup = document.getElementById("myPopup19");
+			    popup.classList.toggle("show");
+				}
+				
+				
+				
+				function myFunction20() {
+			    var popup = document.getElementById("myPopup20");
+			    popup.classList.toggle("show");
+				}
+				
+				
+				function myFunction21() {
+			    var popup = document.getElementById("myPopup21");
+			    popup.classList.toggle("show");
+				}
+				
+				
+				
+				function myFunction22() {
+			    var popup = document.getElementById("myPopup22");
+			    popup.classList.toggle("show");
+				}
+				
+				function myFunction23() {
+			    var popup = document.getElementById("myPopup23");
+			    popup.classList.toggle("show");
+				}
+				
+				function myFunction24() {
+			    var popup = document.getElementById("myPopup24");
+			    popup.classList.toggle("show");
+				}
+</script>
 
 	</body>
 </html>
